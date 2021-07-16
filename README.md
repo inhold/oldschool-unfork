@@ -1,6 +1,6 @@
 # PantherSwap Core
 
-In-depth documentation on OldSchoolFinance is available at [docs.oldschool.finance](https://docs.oldschool.finance).
+In-depth documentation on OldSchool Finance is available at [docs.oldschool.finance](https://docs.oldschool.finance).
 
 # Local Development
 
