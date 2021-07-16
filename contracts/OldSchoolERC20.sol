@@ -1,13 +1,15 @@
 pragma solidity =0.5.16;
 
-import './interfaces/IPantherERC20.sol';
+import './interfaces/IOldSchoolERC20.sol';
 import './libraries/SafeMath.sol';
 
-contract PantherERC20 is IPantherERC20 {
-    using SafeMathPanther for uint;
 
-    string public constant name = 'PantherSwap LPs';
-    string public constant symbol = 'PANTHER-LP';
+// Contrat des tokens de Pair
+contract OldSchoolERC20 is IOldSchoolERC20 {
+    using SafeMathOldSchool for uint;
+
+    string public constant name = 'OldSchool LPs';
+    string public constant symbol = 'OldSc-LP';
     uint8 public constant decimals = 18;
     uint  public totalSupply;
     mapping(address => uint) public balanceOf;
@@ -79,7 +81,7 @@ contract PantherERC20 is IPantherERC20 {
     }
 
     function permit(address owner, address spender, uint value, uint deadline, uint8 v, bytes32 r, bytes32 s) external {
-        require(deadline >= block.timestamp, 'PantherSwap: EXPIRED');
+        require(deadline >= block.timestamp, 'OldSchool Fi: EXPIRED');
         bytes32 digest = keccak256(
             abi.encodePacked(
                 '\x19\x01',
@@ -88,7 +90,7 @@ contract PantherERC20 is IPantherERC20 {
             )
         );
         address recoveredAddress = ecrecover(digest, v, r, s);
-        require(recoveredAddress != address(0) && recoveredAddress == owner, 'PantherSwap: INVALID_SIGNATURE');
+        require(recoveredAddress != address(0) && recoveredAddress == owner, 'OldSchool Fi: INVALID_SIGNATURE');
         _approve(owner, spender, value);
     }
 }

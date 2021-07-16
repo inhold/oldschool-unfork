@@ -1,6 +1,6 @@
 # PantherSwap Core
 
-In-depth documentation on PantherSwap is available at [docs.pantherswap.com](https://docs.pantherswap.com).
+In-depth documentation on PantherSwap is available at [docs.oldschool.finance](https://docs.oldschool.finance).
 
 # Local Development
 

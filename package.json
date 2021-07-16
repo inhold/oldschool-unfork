@@ -1,11 +1,11 @@
 {
-  "name": "@pantherswap/core",
-  "description": "Core contracts for the PantherSwap protocol",
+  "name": "@oldschoolfi/core",
+  "description": "Core contracts for the OldSchool Finance protocol",
   "version": "2.0.1",
-  "homepage": "https://pantherswap.com",
+  "homepage": "https://oldschool.finance",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pantherswap/pantherswap-core"
+    "url": "https://github.com/inhold/oldschoolfi-core"
   },
   "keywords": [
     "pantherswap",
