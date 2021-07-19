@@ -1,9 +1,9 @@
 # OLDSCHOOL FINANCE CORE
 
 Include smart contracts designed to cover the main functionnalities of the AMM:
--Swap,
--Pair creation,
--Fees for liquidity providers
+`-Swap`
+`-Pair creation`
+`-Fees for liquidity providers`
 
 # OldSchoolFi Docs
 
